@@ -1872,12 +1872,12 @@
 			}
 
 		.main.style3 {
-			text-align: center;
 			padding: 6em 0 6em 0;
 		}
 
 			.main.style3 .content > header {
 				margin-bottom: 2em;
+				text-align: center;
 			}
 
 			.main.style3.primary {
@@ -2115,7 +2115,33 @@
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
+		display: flex;
+		flex-direction: column;
 	}
+
+	#about-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.title-box-wrapper {
+		background-color: white;
+		width: 90%;
+		height: 100px;
+		margin: 0 5% 5% 5%;
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		font-size: 3em
+	}
+
+	.sidexside {
+		flex-basis: 40%
+	}
+
 
 /* Two */
 
