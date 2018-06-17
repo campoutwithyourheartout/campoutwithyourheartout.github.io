@@ -2100,6 +2100,14 @@
 		background-repeat: repeat, no-repeat;
 	}
 
+	.title-header {
+		color: #ffec80;
+	}
+
+	.burgundy {
+		color: #800020;
+	}
+
 	@media screen and (max-width: 736px) {
 		#intro {
 			background: #800020;
@@ -2108,13 +2116,21 @@
 
 
 
-/* One */
+/* About Us */
 
 	#about {
 		display: flex;
 		flex-direction: column;
+		background-color: #800020;
 	}
 
+	.gold-title {
+		color: #ffec80;
+	}
+
+	.name {
+		color: #800020;
+	}
 	.sidexside-wrapper {
 		display: flex;
 		flex-direction: row;
@@ -2145,11 +2161,7 @@
 	}
 
 
-/* Two */
-
-	#wedding-party {
-
-	}
+/* Wedding party */
 
 	.wedding-party-content-wrapper {
 		display: flex;
@@ -2177,12 +2189,17 @@
 
 	/* Travel Info */
 
+	#travel-info {
+		background-color: #800020;
+	}
+
 .right-side {
 	order: 1
 }
 
 .travel-info-content {
 	padding: 50px;
+	background-color: white;
 }
 
 @media screen and (max-width: 736px) {
