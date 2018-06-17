@@ -2102,7 +2102,7 @@
 
 	@media screen and (max-width: 736px) {
 		#intro {
-			background: pink;
+			background: #800020;
 		}
 	}
 
@@ -2138,6 +2138,12 @@
 		flex-basis: 40%
 	}
 
+	@media screen and (max-width: 736px) {
+		.sidexside-wrapper {
+			flex-flow: column nowrap;
+		}
+	}
+
 
 /* Two */
 
@@ -2163,6 +2169,12 @@
 		font-weight: bold;
 	}
 
+	@media screen and (max-width: 736px) {
+		#wedding-party {
+			flex-flow: column nowrap;
+		}
+	}
+
 	/* Travel Info */
 
 .right-side {
@@ -2171,6 +2183,16 @@
 
 .travel-info-content {
 	padding: 50px;
+}
+
+@media screen and (max-width: 736px) {
+	#travel-info {
+		flex-flow: column nowrap;
+	}
+
+	.right-side {
+		order: 0;
+	}
 }
 /* Contact */
 
@@ -2210,6 +2232,21 @@
 
 			#contact .box {
 				padding-bottom: 2em;
+			}
+
+			.ss-q-title {
+				text-align: left;
+				padding-bottom: 10px;
+			}
+
+			.ss-choice-item {
+				text-align: left;
+			}
+
+			.ss-q-help {
+				text-align: left;
+				font-size: .75em;
+
 			}
 
 		}
