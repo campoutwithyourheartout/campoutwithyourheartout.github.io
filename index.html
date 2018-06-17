@@ -9,10 +9,14 @@
 		<title>Dayvon and Hayley</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
+		<!-- RSVP Form -->
+		<script type="text/javascript" nonce="&#39;nonce-cMC5ZyTPV4Vm+FNbMpWkY4t579s&#39;">
+		(function(e,t){"function"==typeof define&&define.amd?define(t):"object"==typeof module&&module.exports?module.exports=t():e.H5F=t()})(this,function(){var e,t,a,i,n,r,l,s,o,u,d,c,v,p,f,m,b,h,g,y,w,C,N,A,E,$,x=document,k=x.createElement("input"),q=/^[a-zA-Z0-9.!#$%&'*+-\/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,M=/[a-z][\-\.+a-z]*:\/\//i,L=/^(input|select|textarea)$/i;return r=function(e,t){var a=!e.nodeType||!1,i={validClass:"valid",invalidClass:"error",requiredClass:"required",placeholderClass:"placeholder",onSubmit:Function.prototype,onInvalid:Function.prototype};if("object"==typeof t)for(var r in i)t[r]===void 0&&(t[r]=i[r]);if(n=t||i,a)for(var s=0,o=e.length;o>s;s++)l(e[s]);else l(e)},l=function(a){var i,r=a.elements,l=r.length,c=!!a.attributes.novalidate;if(g(a,"invalid",o,!0),g(a,"blur",o,!0),g(a,"input",o,!0),g(a,"keyup",o,!0),g(a,"focus",o,!0),g(a,"change",o,!0),g(a,"click",u,!0),g(a,"submit",function(i){return e=!0,t||c||a.checkValidity()?(n.onSubmit.call(a,i),void 0):(w(i),void 0)},!1),!v())for(a.checkValidity=function(){return d(a)};l--;)i=!!r[l].attributes.required,"fieldset"!==r[l].nodeName.toLowerCase()&&s(r[l])},s=function(e){var t=e,a=h(t),n={type:t.getAttribute("type"),pattern:t.getAttribute("pattern"),placeholder:t.getAttribute("placeholder")},r=/^(email|url)$/i,l=/^(input|keyup)$/i,s=r.test(n.type)?n.type:n.pattern?n.pattern:!1,o=p(t,s),u=m(t,"step"),v=m(t,"min"),b=m(t,"max"),g=!(""===t.validationMessage||void 0===t.validationMessage);t.checkValidity=function(){return d.call(this,t)},t.setCustomValidity=function(e){c.call(t,e)},t.validity={valueMissing:a,patternMismatch:o,rangeUnderflow:v,rangeOverflow:b,stepMismatch:u,customError:g,valid:!(a||o||u||v||b||g)},n.placeholder&&!l.test(i)&&f(t)},o=function(e){var t=C(e)||e,a=/^(input|keyup|focusin|focus|change)$/i,r=/^(submit|image|button|reset)$/i,l=/^(checkbox|radio)$/i,u=!0;!L.test(t.nodeName)||r.test(t.type)||r.test(t.nodeName)||(i=e.type,v()||s(t),t.validity.valid&&(""!==t.value||l.test(t.type))||t.value!==t.getAttribute("placeholder")&&t.validity.valid?(A(t,[n.invalidClass,n.requiredClass]),N(t,n.validClass)):a.test(i)?t.validity.valueMissing&&A(t,[n.requiredClass,n.invalidClass,n.validClass]):t.validity.valueMissing?(A(t,[n.invalidClass,n.validClass]),N(t,n.requiredClass)):t.validity.valid||(A(t,[n.validClass,n.requiredClass]),N(t,n.invalidClass)),"input"===i&&u&&(y(t.form,"keyup",o,!0),u=!1))},d=function(t){var a,i,r,l,s,u=!1;if("form"===t.nodeName.toLowerCase()){a=t.elements;for(var d=0,c=a.length;c>d;d++)i=a[d],r=!!i.attributes.disabled,l=!!i.attributes.required,s=!!i.attributes.pattern,"fieldset"!==i.nodeName.toLowerCase()&&!r&&(l||s&&l)&&(o(i),i.validity.valid||u||(e&&i.focus(),u=!0,n.onInvalid.call(t,i)));return!u}return o(t),t.validity.valid},c=function(e){var t=this;t.validationMessage=e},u=function(e){var a=C(e);a.attributes.formnovalidate&&"submit"===a.type&&(t=!0)},v=function(){return E(k,"validity")&&E(k,"checkValidity")},p=function(e,t){if("email"===t)return!q.test(e.value);if("url"===t)return!M.test(e.value);if(t){var i=e.getAttribute("placeholder"),n=e.value;return a=RegExp("^(?:"+t+")$"),n===i?!1:""===n?!1:!a.test(e.value)}return!1},f=function(e){var t={placeholder:e.getAttribute("placeholder")},a=/^(focus|focusin|submit)$/i,r=/^(input|textarea)$/i,l=/^password$/i,s=!!("placeholder"in k);s||!r.test(e.nodeName)||l.test(e.type)||(""!==e.value||a.test(i)?e.value===t.placeholder&&a.test(i)&&(e.value="",A(e,n.placeholderClass)):(e.value=t.placeholder,g(e.form,"submit",function(){i="submit",f(e)},!0),N(e,n.placeholderClass)))},m=function(e,t){var a=parseInt(e.getAttribute("min"),10)||0,i=parseInt(e.getAttribute("max"),10)||!1,n=parseInt(e.getAttribute("step"),10)||1,r=parseInt(e.value,10),l=(r-a)%n;return h(e)||isNaN(r)?"number"===e.getAttribute("type")?!0:!1:"step"===t?e.getAttribute("step")?0!==l:!1:"min"===t?e.getAttribute("min")?a>r:!1:"max"===t?e.getAttribute("max")?r>i:!1:void 0},b=function(e){var t=!!e.attributes.required;return t?h(e):!1},h=function(e){var t=e.getAttribute("placeholder"),a=/^(checkbox|radio)$/i,i=!!e.attributes.required;return!(!i||""!==e.value&&e.value!==t&&(!a.test(e.type)||$(e)))},g=function(e,t,a,i){E(window,"addEventListener")?e.addEventListener(t,a,i):E(window,"attachEvent")&&window.event!==void 0&&("blur"===t?t="focusout":"focus"===t&&(t="focusin"),e.attachEvent("on"+t,a))},y=function(e,t,a,i){E(window,"removeEventListener")?e.removeEventListener(t,a,i):E(window,"detachEvent")&&window.event!==void 0&&e.detachEvent("on"+t,a)},w=function(e){e=e||window.event,e.stopPropagation&&e.preventDefault?(e.stopPropagation(),e.preventDefault()):(e.cancelBubble=!0,e.returnValue=!1)},C=function(e){return e=e||window.event,e.target||e.srcElement},N=function(e,t){var a;e.className?(a=RegExp("(^|\\s)"+t+"(\\s|$)"),a.test(e.className)||(e.className+=" "+t)):e.className=t},A=function(e,t){var a,i,n="object"==typeof t?t.length:1,r=n;if(e.className)if(e.className===t)e.className="";else for(;n--;)a=RegExp("(^|\\s)"+(r>1?t[n]:t)+"(\\s|$)"),i=e.className.match(a),i&&3===i.length&&(e.className=e.className.replace(a,i[1]&&i[2]?" ":""))},E=function(e,t){var a=typeof e[t],i=RegExp("^function|object$","i");return!!(i.test(a)&&e[t]||"unknown"===a)},$=function(e){for(var t=document.getElementsByName(e.name),a=0;t.length>a;a++)if(t[a].checked)return!0;return!1},{setup:r}});
+	</script>
+
+
 	</head>
 	<body>
 
@@ -50,7 +54,8 @@
 				<div class="title-box-wrapper">
 						<h1>About Us</h1>
 				</div>
-				<div id="about-wrapper">
+
+				<div class="sidexside-wrapper">
 					<div class="content box style2 sidexside">
 						<header>
 							<h2>Hayley</h2>
@@ -80,54 +85,112 @@
 					</div>
 				</div>
 
-				<a href="#two" class="button style2 down anchored">Next</a>
+				<a href="#wedding-party" class="button style2 down anchored">Next</a>
 			</section>
 
 		<!-- Two -->
 			<section id="wedding-party" class="main style2 left dark fullscreen">
-				<div class="content box style2">
-					<header>
-						<h2>Who I Am</h2>
-					</header>
-					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
-					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+				<div class="title-box-wrapper">
+						<h1>Wedding Party</h1>
 				</div>
-				<a href="#work" class="button style2 down anchored">Next</a>
+
+				<div class="wedding-party-content-wrapper main style2 left">
+					<div class="content box style2 wedding-party-content">
+						<p class="name">Holly Link, Maid of Honor</p>
+						<p>Hi! Holly, Maid of Honor here. I met Rain through a mutual friend 7 years ago and have been best pals ever since. She's seen me through a million things, and I am so excited to be supporting her through this BIG event in her life, and so very glad that it's with Dayvon who is beyond perfect for her. Woo-hoo!</p>
+					</div>
+
+					<div class="content box style2 wedding-party-content">
+						<p class="name">Ginger Sevilla, Bridesmaid</p>
+						<p>Hi there, Ginger here!  I’ve known Hayley since her days of rocking a Woody Wood pecker Mohawk, to the Halloween of the Ace Venture inspired duck butt hairdo, to the time she got lost in the Disneyland bathroom and gave us all a heart attack, to when she flashed motorists in Portugal with a full down the shirt view while riding bikes, and many, many more fantastic memories.  Hayley is not only my sister, but my favorite person in the world.  I’m very excited to be part of this very special day and next chapter in her life.  And maybe encourage her to chug some milk juice at the wedding.</p>
+					</div>
+
+					<div class="content box style2 wedding-party-content">
+						<p class="name">Rhys Mcnamee, Best Man</p>
+						<p>Hello, it’s Rhys! I’m Dayvon’s best man. We’ve been roommates since 2015 and friends for much longer and I’m glad to say that our friendship has helped us both for the better! I’m so excited to see him through marrying the love of his life and going on to even bigger and better things with Rain.</p>
+					</div>
+
+					<div class="content box style2 wedding-party-content">
+						<p class="name">Jude Ariza, Groomsman</p>
+						<p>Hi, I'm Jude! I'm Dayvon's groomsman. I met Dayv and Rain through World of Warcraft raids! I've known Dayv since '08, when we met in person, and Rain since 2010. I’ve been around to see see Rain and Dayv together and both happier for it, and I can’t wait to see where they go next! :)</p>
+					</div>
+
+					<div class="content box style2 wedding-party-content">
+						<p class="name">Jon Howser, Officient</p>
+						<p>Hi, I'm Jon! I've met Dayvon at a party in 2012 and we've been friends ever since. I met Hayley for the first time at my own wedding in 2014. I'm so excited to be officiating this ceremony and I know Dayvon and Hayley will have a long happy life together.</p>
+					</div>
+				</div>
+
+				<a href="#travel-info" class="button style2 down anchored">Next</a>
+			</section>
+
+			<section id="travel-info" class="main style2 right dark fullscreen">
+				<div class="title-box-wrapper">
+						<h1>Travel Information</h1>
+				</div>
+
+				<div class="travel-info-content main style2 right">
+					<p>We recognize that most guests will be coming from out of state. Please let us know if you need help finding decently priced airfare.</p>
+
+					<p>The closest airports will be San Francisco (SFO), Sacramento (SMF), and Oakland (OAK).  If you’re flying in to San Francisco or Oakland, you will have the option of carpooling up to the campground with us. Please let us know if this is something you would like to do, or if you will be providing your own transportation</p>
+
+					<p>If you prefer to drive up by yourselves, please note that extra vehicles will cost more at the campground.</p>
+
+					<p>The campground is about 3 hours north of San Francisco off Hwy 128</p>
+				</div>
+				<a href="#accomodation-info" class="button style2 down anchored">Next</a>
 			</section>
 
 		<!-- Work -->
-			<section id="work" class="main style3 primary">
+			<section id="accomodation-info" class="main style3 primary">
 				<div class="content">
 					<header>
-						<h2>My Work</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-						Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis
-						arcu, id varius justo euismod in. Curabitur egestas consectetur magna vitae.</p>
+						<h2>Accomodation Information</h2>
 					</header>
 
-					<!-- Gallery  -->
-						<div class="gallery">
-							<article class="from-left">
-								<a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
-							</article>
-							<article class="from-left">
-								<a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
-							</article>
-							<article class="from-left">
-								<a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a>
-							</article>
-						</div>
+					<p>Wedding weekend held at Hendy Woods State Park in California. Check in  will be on Friday Oct. 19th at 12pm and checkout is on Sunday at 12pm.</p>
 
+				 	<p>We will be reserving 4-5 campsites for the wedding guests. Each campsite allows 8 people and 2 cars to be parked at the site. The first car does not need to pay an additional vehicle fee, but the 2nd vehicle will be $10.  Any additional vehicles will be $10, but may not be parked at the campsite.</p>
+
+					<p>If you would like to reserve your own campsite, they are $40/night.
+					There are basic cabins available to reserve as well, and those are $60/night.
+					The campground is handicap accessible. The Group of campsites that we will be reserving will not be handicap accessible, but there are campsites available nearby.</p>
+
+					<p>Camping is BYO tent. We will have a list of items that you should probably bring with you if you are camping with us. Let us know if you do not have a tent, and we will try to find one for you. Also let us know if you don’t mind sharing your tent :)</p>
+
+					<p>If you are not camping, but would still like to spend the weekend, there are accommodations nearby in Boonville, CA. Although it is the end of the peak season, I would recommend booking a room as early as possible to ensure you have a room.</p>
+
+					<p><a href="https://www.airbnb.com/">https://www.airbnb.com/</a></p>
+					<p><a href="http://www.boonvillehotel.com">http://www.boonvillehotel.com</a>/</p>
+					<p><a href="http://avinn.com/">http://avinn.com/</a></p>
+				</div>
+			</section>
+
+					<!-- Gallery  -->
+			<section>
+				<header>
+					<h2>Photos</h2>
+				</header>
+
+				<div class="gallery">
+					<article class="from-left">
+						<a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a>
+					</article>
+					<article class="from-right">
+						<a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
+					</article>
+					<article class="from-left">
+						<a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
+					</article>
+					<article class="from-right">
+						<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
+					</article>
+					<article class="from-left">
+						<a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
+					</article>
+					<article class="from-right">
+						<a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a>
+					</article>
 				</div>
 			</section>
 
@@ -135,34 +198,161 @@
 			<section id="contact" class="main style3 secondary">
 				<div class="content">
 					<header>
-						<h2>Say Hello.</h2>
+						<h2>RSVP</h2>
 						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
 					</header>
 					<div class="box">
-						<form method="post" action="#">
-							<div class="field half first"><input type="text" name="name" placeholder="Name" /></div>
-							<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
-							<div class="field"><textarea name="message" placeholder="Message" rows="6"></textarea></div>
-							<ul class="actions">
-								<li><input type="submit" value="Send Message" /></li>
-							</ul>
-						</form>
+						<div class="ss-form">
+						  <form action="https://docs.google.com/forms/d/e/1FAIpQLSd2_KNRAQ039FtKDmJr9-LzleBhjxKuqe8MAP3MC08GDeroHg/formResponse" method="POST" id="ss-form" target="_self" autocomplete="on">
+						    <ol role="list" class="ss-question-list" style="padding-left: 0;">
+
+						      <div class="ss-form-question errorbox-good" role="listitem">
+						        <div dir="auto" class="ss-item ss-item-required ss-text">
+						          <div class="ss-form-entry">
+						            <label class="ss-q-item-label" for="entry_1619204650">
+						              <div class="ss-q-title">
+														Your Name<span class="ss-required-asterisk" aria-hidden="true">*</span>
+						              </div>
+						            </label>
+						            <input type="text" name="entry.1619204650" value="" class="ss-q-short" id="entry_1619204650" dir="auto" aria-label="Your Name" aria-required="true" required="" title="">
+						            <div class="error-message" id="1387199460_errorMessage"></div>
+						          </div>
+						        </div>
+						      </div>
+
+						      <div class="ss-form-question errorbox-good" role="listitem">
+						        <div dir="auto" class="ss-item ss-item-required ss-radio">
+						          <div class="ss-form-entry">
+						            <label class="ss-q-item-label" for="entry_1275419724">
+						              <div class="ss-q-title">
+						                Can you attend?<span class="ss-required-asterisk" aria-hidden="true">*</span>
+						              </div>
+						            </label>
+
+						            <ul class="ss-choices" role="radiogroup" aria-label="Can you attend?">
+						              <li class="ss-choice-item">
+						                <label>
+						                  <span class="ss-choice-item-control goog-inline-block">
+						                    <input type="radio" name="entry.877086558" value="Yes, I&#39;m attending and will be camping" id="group_877086558_1" role="radio" class="ss-q-radio" aria-label="Yes, I&#39;m attending and will be camping" required="" aria-required="true">
+						                  </span>
+						                  <span class="ss-choice-label">Yes, I&#39;m attending and will be camping</span>
+						                </label>
+						              </li>
+
+						              <li class="ss-choice-item">
+						                <label>
+						                  <span class="ss-choice-item-control goog-inline-block">
+						                    <input type="radio" name="entry.877086558" value="Yes, I&#39;m attending and will be finding my own accomodation" id="group_877086558_2" role="radio" class="ss-q-radio" aria-label="Yes, I&#39;m attending and will be finding my own accomodation" required="" aria-required="true">
+						                  </span>
+						                  <span class="ss-choice-label">Yes, I&#39;m attending and will be finding my own accomodation</span>
+						                </label>
+						              </li>
+
+						              <li class="ss-choice-item">
+						                <label>
+						                  <span class="ss-choice-item-control goog-inline-block">
+						                    <input type="radio" name="entry.877086558" value="No, I am unable to attend" id="group_877086558_3" role="radio" class="ss-q-radio" aria-label="No, I am unable to attend" required="" aria-required="true">
+						                  </span>
+						                  <span class="ss-choice-label">No, I am unable to attend</span>
+						                </label>
+						              </li>
+						            </ul>
+						            <div class="error-message" id="1275419724_errorMessage"></div>
+						          </div>
+						        </div>
+						      </div>
+
+						      <div class="ss-form-question errorbox-good" role="listitem">
+						        <div dir="auto" class="ss-item  ss-text">
+						          <div class="ss-form-entry">
+						            <label class="ss-q-item-label" for="entry_2034145658">
+						              <div class="ss-q-title">Your Guest&#39;s Name</div>
+						              <div class="ss-q-help ss-secondary-text" dir="auto">leave blank if you are not planning to bring a guest</div>
+						            </label>
+
+						            <input type="text" name="entry.2034145658" value="" class="ss-q-short" id="entry_2034145658" dir="auto" aria-label="Your Guest&#39;s Name leave blank if you are not planning to bring a guest " title="">
+						            <div class="error-message" id="360262562_errorMessage"></div>
+						          </div>
+						        </div>
+						      </div>
+
+						      <div class="ss-form-question errorbox-good" role="listitem">
+						        <div dir="auto" class="ss-item  ss-paragraph-text">
+						          <div class="ss-form-entry">
+						            <label class="ss-q-item-label" for="entry_2606285">
+						              <div class="ss-q-title">
+						                Any dietary restrictions we should be aware of for you or your guest?
+						              </div>
+						            </label>
+						            <textarea name="entry.2606285" rows="8" cols="0" class="ss-q-long" id="entry_2606285" dir="auto" aria-label="Any dietary restrictions we should be aware of for you or your guest?  "></textarea>
+						          </div>
+						        </div>
+						      </div>
+
+						      <div class="ss-form-question errorbox-good" role="listitem">
+						        <div dir="auto" class="ss-item  ss-radio">
+						          <div class="ss-form-entry">
+
+						            <label class="ss-q-item-label" for="entry_583458756">
+						              <div class="ss-q-title">
+						                Will you be carpooling to the venue with the wedding party?
+						              </div>
+						            </label>
+
+						            <ul class="ss-choices" role="radiogroup" aria-label="Will you be carpooling to the venue with the wedding party?  ">
+						              <li class="ss-choice-item">
+						                <label>
+						                  <span class="ss-choice-item-control goog-inline-block">
+						                    <input type="radio" name="entry.550757167" value="Yes" id="group_550757167_1" role="radio" class="ss-q-radio" aria-label="Yes">
+						                  </span>
+						                  <span class="ss-choice-label">Yes</span>
+						                </label>
+						              </li>
+
+						              <li class="ss-choice-item">
+						                <label>
+						                  <span class="ss-choice-item-control goog-inline-block">
+						                    <input type="radio" name="entry.550757167" value="No, I will find my own way there" id="group_550757167_2" role="radio" class="ss-q-radio" aria-label="No, I will find my own way there">
+						                  </span>
+						                  <span class="ss-choice-label">No, I will find my own way there</span>
+						                </label>
+						              </li>
+						            </ul>
+						          </div>
+						        </div>
+						      </div>
+
+						     <div class="ss-form-question errorbox-good" role="listitem">
+						       <div dir="auto" class="ss-item  ss-paragraph-text">
+						         <div class="ss-form-entry">
+						           <label class="ss-q-item-label" for="entry_956539930">
+						             <div class="ss-q-title">
+						               Do you need assistance with travel arrangements?
+						             </div>
+						           </label>
+
+						           <textarea name="entry.956539930" rows="8" cols="0" class="ss-q-long" id="entry_956539930" dir="auto" aria-label="Do you need assistance with travel arrangements?  "></textarea>
+						         </div>
+						       </div>
+						     </div>
+
+						     <div class="ss-item ss-navigate">
+	               	<input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+						     </div>
+						   </ol>
+						 </form>
+						</div>
+
+						<script nonce="cMC5ZyTPV4Vm+FNbMpWkY4t579s" type='text/javascript' src='/static/forms/client/js/4210354614-formviewer_prd.js'></script>
+						<script type="text/javascript" nonce="&#39;nonce-cMC5ZyTPV4Vm+FNbMpWkY4t579s&#39;">H5F.setup(document.getElementById('ss-form'));
+						_initFormViewer("[100,null,[]\n]\n");
+						</script>
 					</div>
 				</div>
 			</section>
 
 		<!-- Footer -->
 			<footer id="footer">
-
-				<!-- Icons -->
-					<ul class="actions">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
-					</ul>
 
 				<!-- Menu -->
 					<ul class="menu">
@@ -178,7 +368,6 @@
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
 	</body>

@@ -2119,14 +2119,14 @@
 		flex-direction: column;
 	}
 
-	#about-wrapper {
+	.sidexside-wrapper {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
 	}
 
 	.title-box-wrapper {
-		background-color: white;
+		background-color: grey;
 		width: 90%;
 		height: 100px;
 		margin: 0 5% 5% 5%;
@@ -2145,11 +2145,35 @@
 
 /* Two */
 
-	#two {
+	#wedding-party {
 		background: url("images/overlay.png"), url("../../images/two.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.wedding-party-content-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	.wedding-party-content {
+		margin: 10px;
+		align-self: center;
+	}
+
+	.name {
+		font-weight: bold;
+	}
+
+	/* Travel Info */
+
+	.travel-info-content {
+		background-color: pink
 	}
 
 /* Contact */
